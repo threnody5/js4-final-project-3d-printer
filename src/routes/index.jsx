@@ -24,3 +24,5 @@ export const router = createBrowserRouter([
     element: <Products />,
   },
 ]);
+
+console.log(createBrowserRouter);
