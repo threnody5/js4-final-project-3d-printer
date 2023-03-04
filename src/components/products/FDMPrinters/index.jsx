@@ -1,6 +1,6 @@
 /** @format */
 
-const FDMProducts = () => {
+const FDMPrinters = () => {
   return (
     <div>
       <h3>FDM products works</h3>
@@ -8,4 +8,4 @@ const FDMProducts = () => {
   );
 };
 
-export default FDMProducts;
+export default FDMPrinters;

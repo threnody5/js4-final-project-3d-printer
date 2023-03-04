@@ -1,6 +1,6 @@
 /** @format */
 
-const ResinProducts = () => {
+const ResinPrinters = () => {
   return (
     <div>
       <h3>Resin products works</h3>
@@ -8,4 +8,4 @@ const ResinProducts = () => {
   );
 };
 
-export default ResinProducts;
+export default ResinPrinters;
