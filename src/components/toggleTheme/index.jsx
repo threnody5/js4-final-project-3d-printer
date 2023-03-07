@@ -2,20 +2,34 @@
 
 import { switchTheme } from '../../theme/themeSlice';
 import { useSelector, useDispatch } from 'react-redux';
+import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
+// import './styles.module.scss';
+import styles from './styles.module.scss';
 
 const ToggleTheme = () => {
-  const themeState = useSelector((state) => state.theme.value);
+  const theme = useSelector((state) => state.theme.value);
   const dispatch = useDispatch();
   return (
     <>
       <button
+        className={styles.button}
+        theme={theme}
         onClick={() =>
-          dispatch(switchTheme(themeState === 'light' ? 'dark' : 'light'))
+          dispatch(switchTheme(theme === 'light' ? 'dark' : 'light'))
         }
       >
-        Switch Theme
+        {theme === 'light' ? (
+          <BsFillMoonFill
+            className={styles.iconStyle}
+            theme={theme}
+          />
+        ) : (
+          <BsFillSunFill
+            className={styles.iconStyle}
+            theme={theme}
+          />
+        )}
       </button>
-      {themeState}
     </>
   );
 };

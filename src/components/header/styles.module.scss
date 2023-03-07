@@ -1,0 +1,15 @@
+@import './../../style/styles.module.scss';
+
+.headerWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+[theme='light'] {
+    background-color: $light-backdrop-color;
+}
+
+[theme='dark'] {
+    background-color: $dark-backdrop-color;
+}

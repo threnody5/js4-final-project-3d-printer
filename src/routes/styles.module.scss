@@ -1,0 +1,22 @@
+@import './../style/styles.module.scss';
+
+nav {
+    padding: 1rem;
+
+    a {
+        text-decoration: none;
+        padding-left: 2rem;
+    }
+}
+
+[theme='light'] {
+    a {
+        color: $light-text-color;
+    }
+}
+
+[theme='dark'] {
+    a {
+        color: $dark-text-color;
+    }
+}
