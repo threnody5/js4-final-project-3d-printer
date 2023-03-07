@@ -1,9 +1,13 @@
 /** @format */
 
+import NavRoute from '../../routes/navRoute';
+import { Outlet } from 'react-router-dom';
+
 const Header = () => {
   return (
     <div>
-      <h3>Header works!</h3>
+      <NavRoute />
+      <Outlet />
     </div>
   );
 };
