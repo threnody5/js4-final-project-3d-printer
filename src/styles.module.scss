@@ -1,3 +1,14 @@
+@import './style/styles.module.scss';
+
 body {
-    margin: auto
+    margin: auto;
+}
+[theme='light'] {
+        // min-height: 100vh;
+        background-color: $light-background-color;
+}
+
+[theme='dark'] {
+        // min-height: 100vh;
+        background-color: $dark-background-color;
 }

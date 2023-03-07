@@ -4,7 +4,6 @@ import NavRoute from '../../routes/navRoute';
 import { Outlet } from 'react-router-dom';
 import ToggleTheme from '../toggleTheme';
 import { useSelector } from 'react-redux';
-import { AiTwotoneTool } from 'react-icons/ai';
 import styles from './styles.module.scss';
 
 const Header = () => {
@@ -15,10 +14,6 @@ const Header = () => {
         theme={theme}
         className={styles.headerWrapper}
       >
-        {/* <AiTwotoneTool
-          className={styles.iconStyle}
-          theme={theme}
-        /> */}
         <NavRoute />
         <ToggleTheme />
       </div>

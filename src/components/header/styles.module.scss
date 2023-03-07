@@ -7,9 +7,13 @@
 }
 
 [theme='light'] {
-    background-color: $light-backdrop-color;
+    .headerWrapper {
+        background-color: $light-backdrop-color;
+    }
 }
 
 [theme='dark'] {
-    background-color: $dark-backdrop-color;
+    .headerWrapper {
+        background-color: $dark-backdrop-color;
+    }
 }

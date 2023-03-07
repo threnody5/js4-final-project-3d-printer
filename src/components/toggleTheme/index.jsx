@@ -10,7 +10,7 @@ const ToggleTheme = () => {
   const theme = useSelector((state) => state.theme.value);
   const dispatch = useDispatch();
   return (
-    <>
+    <div className={styles.buttonWrapper}>
       <button
         className={styles.button}
         theme={theme}
@@ -30,7 +30,7 @@ const ToggleTheme = () => {
           />
         )}
       </button>
-    </>
+    </div>
   );
 };
 

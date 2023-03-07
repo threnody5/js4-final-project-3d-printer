@@ -5,16 +5,20 @@
 }
 
 .iconStyle {
+    padding-top: 0.8rem;
     height: 3vh;
     width: 3vw;
+    // margin: 1rem;
 }
 
-[theme='light'] {
-    background-color: $light-backdrop-color;
-    color: $dark-background-color;
-}
-
-[theme='dark'] {
-    background-color: $dark-backdrop-color;
-    color: $dark-warning-color;
+.buttonWrapper {
+    [theme='light'] {
+        background-color: $light-backdrop-color;
+        color: $dark-background-color;
+    }
+    
+    [theme='dark'] {
+        background-color: $dark-backdrop-color;
+        color: $dark-warning-color;
+    }
 }
