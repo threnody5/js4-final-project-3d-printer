@@ -1,16 +1,17 @@
 /** @format */
 
 import { createBrowserRouter } from 'react-router-dom';
-import LandingPage from '../components/landingPage';
-import Login from '../components/login';
-import SignUp from '../components/signup';
+import LandingPage from '../pages/landingPage';
+import Login from '../pages/login';
+import SignUp from '../pages/signup';
 import Header from '../components/header';
-import Products from '../components/products';
-import ContactUs from '../components/contactUs';
-import FDMPrinters from '../components/products/FDMPrinters';
-import ResinPrinters from '../components/products/resinPrinters';
-import Filament from '../components/products/filament';
-import Resin from '../components/products/resin';
+import Products from '../pages/products';
+import ContactUs from '../pages/contactUs';
+import FDMPrinters from '../pages/products/FDMPrinters';
+import ResinPrinters from '../pages/products/resinPrinters';
+import Filament from '../pages/products/filament';
+import Resin from '../pages/products/resin';
+import AboutUs from '../pages/aboutUs';
 
 export const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ export const router = createBrowserRouter([
       {
         path: 'resin',
         element: <Resin />,
+      },
+      {
+        path: 'about_us',
+        element: <AboutUs />,
       },
     ],
   },
