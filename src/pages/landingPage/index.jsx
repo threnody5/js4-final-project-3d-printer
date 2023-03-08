@@ -1,15 +1,16 @@
 /** @format */
 
-import styles from './styles.modules.scss';
 import { useSelector } from 'react-redux';
-// import landingPageHero from './../../assets/landing-page-hero.png';
+import styles from './styles.modules.scss';
 
 const LandingPage = () => {
   const theme = useSelector((state) => state.theme.value);
   return (
-    <div theme={theme}>
-      <img src={'./../../assets/landing-page-hero.jpg'} />
+    // <div theme={theme}>
+    <div className='landingPageHero'>
+      {/* <img src={'./../../../public/assets/best-3D-printer.jpg'} /> */}
     </div>
+    // </div>
   );
 };
 

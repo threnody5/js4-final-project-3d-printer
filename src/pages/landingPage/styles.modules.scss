@@ -1,12 +1,26 @@
 @import './../../style/styles.module.scss';
 
-// body {
-//     min-height: 100vh;
-//     [theme='dark'] {
-//         background-color: $dark-background-color;
-//     }
+.landingPageHero {
+    // img {
+    //     width: 100vw;
+    //     // max-height: 200px;
+    //     overflow: hidden;
+    //     // object-position: 70% 15%;
+        // aspect-ratio: 20 3;
 
-//     [theme='light'] {
-//         background-color: $light-background-color;
-//     }
-// }
+        background-image: "./../../../public/assets/landing-page-hero.jpg";
+        height: 500px;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        img {
+            size: cover;
+            position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    // }
+}
