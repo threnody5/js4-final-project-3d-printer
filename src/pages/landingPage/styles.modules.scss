@@ -1,12 +1,12 @@
 @import './../../style/styles.module.scss';
 
-body {
-    // min-height: 100vh;
-    [theme='dark'] {
-        background-color: $dark-background-color;
-    }
+// body {
+//     min-height: 100vh;
+//     [theme='dark'] {
+//         background-color: $dark-background-color;
+//     }
 
-    [theme='light'] {
-        background-color: $light-background-color;
-    }
-}
+//     [theme='light'] {
+//         background-color: $light-background-color;
+//     }
+// }

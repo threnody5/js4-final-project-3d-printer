@@ -8,19 +8,19 @@
         padding-left: 2rem;
     }
 
-    [theme='light'] {
-        background-color: $light-backdrop-color;
+        [theme='light'] {
+            background-color: $light-backdrop-color;
 
-        a {
-            color: $light-text-color;
+            a {
+                color: $light-text-color;
+            }
         }
-    }
 
-    [theme='dark'] {
-        background-color: $dark-backdrop-color;
+        [theme='dark'] {
+            background-color: $dark-backdrop-color;
 
-        a {
-            color: $dark-text-color;
+            a {
+                color: $dark-text-color;
+            }
         }
-    }
 }

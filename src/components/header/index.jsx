@@ -9,11 +9,8 @@ import styles from './styles.module.scss';
 const Header = () => {
   const theme = useSelector((state) => state.theme.value);
   return (
-    <div>
-      <div
-        theme={theme}
-        className={styles.headerWrapper}
-      >
+    <div theme={theme}>
+      <div className={styles.headerWrapper}>
         <NavRoute />
         <ToggleTheme />
       </div>
