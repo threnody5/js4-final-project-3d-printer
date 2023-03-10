@@ -1,0 +1,18 @@
+@import './../../style/styles.module.scss';
+
+// .light {
+    .signUpButton {
+        background-color: $light-button-color;
+    }
+// }
+
+.dark {
+    .signUpButton {
+        background-color: $dark-button-color;
+    }
+}
+
+// .dark {
+// background-color: $dark-button-color;
+// }
+// }

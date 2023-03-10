@@ -4,6 +4,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+    .navRouteContainer {
+        flex: 50;
+    }
 }
 
 [theme='light'] {

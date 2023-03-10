@@ -1,7 +1,14 @@
 /** @format */
 
-const signUpButton = () => {
-  return <button>Sign Up</button>;
+import styles from './styles.module.scss';
+import { useSelector } from 'react-redux';
+
+const SignUpButton = () => {
+  const theme = useSelector((state) => state.theme.value);
+
+  return <button className={'signUpButton'}>Sign Up</button>;
 };
 
-export default signUpButton;
+// `${styles[theme]} ${styles.signUpButton}`
+
+export default SignUpButton;
