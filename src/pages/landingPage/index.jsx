@@ -8,6 +8,7 @@ const LandingPage = () => {
   return (
     // <div theme={theme}>
     <div className='landingPageHero'>
+      Landing Page Works
       {/* <img src={'./../../../public/assets/best-3D-printer.jpg'} /> */}
     </div>
     // </div>

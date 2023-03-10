@@ -2,6 +2,7 @@
 
 import { RouterProvider } from 'react-router-dom';
 // import { useSelector } from 'react-redux';
+import Header from './components/header';
 import { router } from './routes/index';
 import './styles.module.scss';
 
@@ -13,7 +14,13 @@ const App = () => {
 
   return (
     // <ThemeProvider>
-    <RouterProvider router={router} />
+    <>
+      <Header />
+      <RouterProvider router={router}>
+        {/* <Header /> */}
+        <div>content</div>
+      </RouterProvider>
+    </>
     // </ThemeProvider>
   );
 };

@@ -4,7 +4,6 @@ import { createBrowserRouter } from 'react-router-dom';
 import LandingPage from '../pages/landingPage';
 import Login from '../pages/login';
 import SignUp from '../pages/signup';
-import Header from '../components/header';
 import Products from '../pages/products';
 import ContactUs from '../pages/contactUs';
 import FDMPrinters from '../pages/products/FDMPrinters';
@@ -16,48 +15,42 @@ import AboutUs from '../pages/aboutUs';
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <Header />,
-    children: [
-      {
-        path: '/',
-        element: <LandingPage />,
-      },
-      {
-        path: 'login',
-        element: <Login />,
-      },
-      {
-        path: 'sign_up',
-        element: <SignUp />,
-      },
-      {
-        path: 'products/',
-        element: <Products />,
-      },
-      {
-        path: 'contact_us',
-        element: <ContactUs />,
-      },
-      {
-        path: 'fdm_printers',
-        element: <FDMPrinters />,
-      },
-      {
-        path: 'resin_printers',
-        element: <ResinPrinters />,
-      },
-      {
-        path: 'filament',
-        element: <Filament />,
-      },
-      {
-        path: 'resin',
-        element: <Resin />,
-      },
-      {
-        path: 'about_us',
-        element: <AboutUs />,
-      },
-    ],
+    element: <LandingPage />,
+  },
+  {
+    path: 'login',
+    element: <Login />,
+  },
+  {
+    path: 'sign_up',
+    element: <SignUp />,
+  },
+  {
+    path: 'products/',
+    element: <Products />,
+  },
+  {
+    path: 'contact_us',
+    element: <ContactUs />,
+  },
+  {
+    path: 'fdm_printers',
+    element: <FDMPrinters />,
+  },
+  {
+    path: 'resin_printers',
+    element: <ResinPrinters />,
+  },
+  {
+    path: 'filament',
+    element: <Filament />,
+  },
+  {
+    path: 'resin',
+    element: <Resin />,
+  },
+  {
+    path: 'about_us',
+    element: <AboutUs />,
   },
 ]);
